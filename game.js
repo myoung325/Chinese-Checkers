@@ -773,9 +773,9 @@ class EvalBar {
 function getTeamColor(team) {
   switch (team) {
     case 0:
-      return color(0, 0, 0);
+      return color(128, 0, 128);   // was (0, 0, 0)
     case 1:
-      return color(255, 255, 255);
+      return color(255, 255, 0);   // was (255, 255, 255)
     case 2:
       return color(0, 0, 255);
     case 3:
