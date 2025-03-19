@@ -263,7 +263,7 @@ Permutations: ${game.ai.permutations}
     this.evalbar.draw();
 
     // Turn / Win Text
-    let turnText = "WHITE";
+    let turnText = "GOLD";
     textAlign(CENTER, TOP);
     textSize(50);
     fill(255);
@@ -272,16 +272,16 @@ Permutations: ${game.ai.permutations}
 
     if (this.board.winner != null) {
       // Winner
-      let WINNER = "WHITE";
+      let WINNER = "GOLD";
       if (this.board.winner < 0) {
-        WINNER = "BLACK";
+        WINNER = "PURPLE";
         fill(0);
         stroke(255, 200);
       }
       turnText = WINNER + " WINS!";
     } else if (this.board.control.turn == 0) {
-      // Black turn
-      turnText = "BLACK";
+      // Purple turn
+      turnText = "PURPLE";
       fill(0);
       stroke(255, 200);
     }
